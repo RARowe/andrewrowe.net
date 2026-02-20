@@ -1,2 +1,1 @@
-# Hello world!
-[go to sub directory](sub)
+![Page under construction](https://commons.wikimedia.org/wiki/File:Under_construction_graphic.gif)
