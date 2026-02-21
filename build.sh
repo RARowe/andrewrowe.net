@@ -25,5 +25,5 @@ cp stagit_style.css public/www/style.css
 cp stagit_logo.png public/www/logo.png
 cd public/www
 stagit ../..
-rm files/deploy.sh.html
+rm file/deploy.sh.html
 
