@@ -25,8 +25,6 @@ cp stagit_style.css public/www/style.css
 cp stagit_logo.png public/www/logo.png
 cd public/www
 stagit ../..
-rm file/deploy.sh.html
-
 
 # Remove all .swp files from public/...
 cd ../..
