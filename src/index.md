@@ -38,5 +38,5 @@ my childhood graphing calculator.
 
 I enjoy writing C code as a hobby.
 
-I generated this website with [Pandoc](https://pandoc.org/) and a [shell script](build.sh) from [Markdown](src.tar.gz).
+I generated this website with [Pandoc](https://pandoc.org/) and a [shell script](build.sh.txt) from [Markdown](src.tar.gz).
 

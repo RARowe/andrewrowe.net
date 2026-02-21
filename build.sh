@@ -20,7 +20,7 @@ find "$src" -type f -not -name "*.md" | while read -r file; do
 done
 
 # Move sources to public/ for download
-cp build.sh public/
+cp build.sh public/build.sh.txt
 tar --exclude='*.swp' -czvf src.tar.gz src/
 mv src.tar.gz public/
 
