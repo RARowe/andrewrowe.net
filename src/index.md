@@ -38,4 +38,5 @@ my childhood graphing calculator.
 
 I enjoy writing C code [as a hobby](https://github.com/RARowe/rpg).
 
-I generated this website with [Pandoc](https://pandoc.org/) and a [shell script]() from Markdown.
+I generated this website with [Pandoc](https://pandoc.org/) and a [shell script](www/file/build.sh.html) from Markdown. The Git repo views are made with [stagit](https://codemadness.org/stagit.html).
+
