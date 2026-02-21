@@ -28,5 +28,5 @@ stagit ../..
 
 # Remove all .swp files from public/...
 cd ../..
-find public/ | grep '\.swp$' | xargs rm
+find public/ | grep '\.swp$' | xargs rm -f
 
