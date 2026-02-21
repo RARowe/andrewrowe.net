@@ -19,14 +19,8 @@ find "$src" -type f -not -name "*.md" | while read -r file; do
     cp -f "$file" "$target_file"
 done
 
-# Generate static repo page
-mkdir public/www
-cp stagit_style.css public/www/style.css
-cp stagit_logo.png public/www/logo.png
-cd public/www
-stagit ../..
-
-# Remove all .swp files from public/...
-cd ../..
-find public/ | grep '\.swp$' | xargs rm -f
+# Move sources to public/ for download
+cp build.sh public/
+tar --exclude='*.swp' -czvf src.tar.gz src/
+mv src.tar.gz public/
 
