@@ -27,3 +27,8 @@ cd public/www
 stagit ../..
 rm file/deploy.sh.html
 
+
+# Remove all .swp files from public/...
+cd ../..
+find public/ | grep '\.swp$' | xargs rm
+
