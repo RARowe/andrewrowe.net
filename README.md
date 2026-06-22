@@ -5,6 +5,7 @@ The source code for my [personal website](https://andrewrowe.net).
 1. [Pandoc](https://pandoc.org/)
 2. [Python3 (for local dev)](https://www.python.org/downloads/)
 
+## Build and Deploy
 ```bash
 # To run the local dev server
 bash local_dev.bash
