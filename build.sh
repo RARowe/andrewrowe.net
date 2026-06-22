@@ -21,10 +21,6 @@ done
 
 # Move sources to public/ for download
 cp build.sh public/build.sh.txt
-tar --exclude='*.swp' -czvf src.tar.gz src/
-mv src.tar.gz public/
 mkdir public/chant
 cp chant/* public/chant
-
-chmod a-w -R public
 

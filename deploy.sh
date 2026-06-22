@@ -4,3 +4,5 @@ if [ -z "${HOSTNAME:-}" ]; then
 fi
 
 rsync -avz --delete ./public/ $HOSTNAME:/var/www/andrewrowe.net
+ssh $HOSTNAME chmod a-w -R /var/www/andrewrowe.net
+
