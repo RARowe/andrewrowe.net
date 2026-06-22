@@ -1,0 +1,109 @@
+diff --git a/src/_drafts/ai/index.md b/src/_drafts/ai/index.md
+index e3ae799..d7a726d 100644
+--- a/src/_drafts/ai/index.md
++++ b/src/_drafts/ai/index.md
+@@ -8,13 +8,13 @@ abstract: |
+   Despite rapid improvement, such a fate seems unlikely (for now).
+ ---
+ 
+-# "Autonomous" AI
++# "Fully Autonomous" AI
+ <img src="assembly_line.jpg" alt="an assembly line" width="720" height="520">
+ 
+ [This article by Matt Shumer](https://shumer.dev/something-big-is-happening) made its rounds recently and stirred up
+ interesting discussion at my work and online. Like the author, I have had some big "wow" in 2026
+ working with state-of-the-art agentic AI models from Athropic ([Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5)
+-and [4.6](https://www.anthropic.com/news/claude-opus-4-6)) and OpenAI ([GPT Codex 5.3](https://openai.com/index/introducing-gpt-5-3-codex/)).
++and [4.6](https://www.anthropic.com/news/claude-opus-4-6)) and OpenAI ([GPT Codex 5.3](https://openai.com/index/introducing-gpt-5-3-codex/)... and, as I'm finalizing this article, [GPT 5.4](https://openai.com/index/introducing-gpt-5-4/) just got released).
+ I agree with Matt that these new agentic models are a farcry from the early versions of ChatGPT, however,
+ I wish to offer some counterpoints to what I found to be his most sensational thesis.
+ 
+@@ -39,43 +39,24 @@ Leading to a conclusion that a layperson may find shocking:
+ > the ones building it — believe the process has already started.
+ 
+ An "intelligence explosion" seems like something out of a [science fiction movie](https://en.wikipedia.org/wiki/Skynet_(Terminator)),
+-but Matt's article indicates it's not a question of "_if_" an intelligence explosion will happen,
+-but "_when_". To be fair, Matt is a bit ambiguous as to whether he truly thinks a fully autonomous
+-AI future is around the corner (though he does seem . It could be that he is only emphasizing the incoming disruption to
+-white-collar jobs.
+-by AI,
+-dances around this idea while emphasizing the disruptive nature of AI to peoples' livlihoods.
+-As the title of the article says, Matt thinks we need to prepare for "something big" that is "happening" now.
+-
+-I want to focus on the "autonoumous" piece. By Matt's estimation, humans will be removed from a significant portion of computer work
+-AI-driven software development process. Non-human guided software development has already shown to
+-create real world problems and getting to a true state of "autonomous AI software" seems unlikely.
+-
+-I think, firstly, I need to properly define what I mean by "autonomous". At the mention of "intelligence
+-explosion", I immediately jumped to the idea of an AI singularity. Now, Matt may actually mean something
+-more conservative than this in his article, but the frantic nature of the language and the call to action
+-would have most people thinking than something more than a tool that makes you 20% more productive has come
+-along. In fact [he wrote another article](https://shumer.dev/gpt53-codex-review) where he continued to emphasize
+-this autonomous language. For example:
+-
+-- [Full Autonomy Has Arrived](https://shumer.dev/gpt53-codex-review#:~:text=Full%20Autonomy%20Has%20Arrived)
+-- [But now we have hit the next phase change, and I am calling it now: this is full autonomy.](https://shumer.dev/gpt53-codex-review#:~:text=But%20now%20we%20have%20hit%20the%20next%20phase%20change%2C%20and%20I%20am%20calling%20it%20now%3A%20this%20is%20full%20autonomy.)
+-- [GPT-5.3-Codex is the first coding model I have used where full autonomy starts feeling operationally real.](https://shumer.dev/gpt53-codex-review#:~:text=GPT%2D5.3%2DCodex%20is%20the%20first%20coding%20model%20I%20have%20used%20where%20full%20autonomy%20starts%20feeling%20operationally%20real.)
+-
+-Actually, this article is much more conservative in his take of autonomy. For him, it appears autonomy means
+-having strong acceptance criteria (i.e. tests), and let the agent code against those tests. I think that is a
+-good approach for AI workflows, but I would hardly call that "autonomous". The goal, the success criteria, and the
+-"true north" are all being specified by humans.
++but Matt's article indicates it's not a question of "_if_" an intelligence explosion[^1] will happen,
++but "_when_". By Matt's estimation, humans will be removed from a significant portion of computer work, to the point
++of not being involved at all.
+ 
+-Finally, and related to my previous point, it is a large jump to think that AI will be fully autonomous (i.e. in
+-no need of human intervention) based off of current AI improvement trends. Despite this being portrayed as the
+-next logical step in a seemingly exponentially accelerating process, the data that we currently have is based
+-off of humans driving the process of improvement. We would need a totally different set of data to show trends
+-of AI improving without human intervention to think that we will be getting there any time soon.
++Matt _may_ have a more conservative view of AI's abilities[^2], but his article leans into the use
++of frantic and fantastical language about our impending AI driven future. On top of this,
++I have seen many people react to the article, not by dealing with its more modest claim
++(i.e. "try AI if you haven't recently"), but by looking at is as a definitive insider insight
++that AI is fully taking over everything and can _improve itself_.
++
++I believe this intelligence explosion is unlikely.
+ 
++<img src="lobsters.jpg" alt="a group of lobsters" width="720" height="565">
+ 
++Non-human guided software development has already shown to create real world problems.
+ As a recent case-study, the creator of the [viral app Moltbook](https://www.moltbook.com/)
+-claims that [the entirety of the product was built with AI](https://x.com/MattPRD/status/2017386365756072376); he "didn't write one line of code." This statement was proudly made days before it was discovered that Moltbook's production database credentials
++claims that [the entirety of the product was built with AI](https://x.com/MattPRD/status/2017386365756072376);
++he "didn't write one line of code." This statement was proudly made days before it was discovered that Moltbook's production database credentials
+ [were written in plaintext into the client code](https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys).
+ This led to a flood of bad actors tricking people into thinking that the AIs posting to the online community
+ [had reached some level of concerning intelligence](https://x.com/karpathy/status/2017296988589723767), when, in
+@@ -84,10 +65,15 @@ to promote their cryptocurrency "meme coins" (reality is stranger than fiction).
+ the question of how many of these types of vulnerabilities have already been introduced into the world.
+ 
+ One could argue that the Moltbook situation is just one datapoint. It could be a "skill issue" on the part
+-of the creator (though, rhetorically, I don't know how "skill issues" still apply in a world of autonomous AI development).
+-The creator may have used the wrong agentic model for the job. The mistake generated may be something
++of the creator.[^3] The creator may have used the wrong agentic model for the job. The mistake generated may be something
+ that will be more easily caught, or next to impossible, in future AI generations. These are all fair points,
+-but I think the issue still stands: how do you verify mountains of code that only AI has "looked" at?
++but I think the issue still stands: how do you verify mountains of code that only AI has verified?
++
++Finally, and related to my previous point, it is a large jump to think that AI will be fully autonomous (i.e. in
++no need of human intervention) based off of current AI improvement trends. Despite this being portrayed as the
++next logical step in a seemingly exponentially accelerating process, the data that we currently have is based
++off of humans driving the process of improvement. We would need a totally different set of data to show trends
++of AI improving without human intervention to think that we will be getting there any time soon.
+ 
+ <img src="ouroboros.jpg" alt="a stone carving of an ouroboros" width="720" height="440">
+ 
+@@ -115,3 +101,11 @@ As a final note, Mitchell Hashimoto (Hashicorp and [Ghostty](https://ghostty.org
+ perspective](https://mitchellh.com/writing/my-ai-adoption-journey) about the practical use of AI in 2026, and
+ it though less sensational, it is more realistic to my experience.
+ on AI adoption, and 
++
++[^1]: Sometimes called a [singularity](https://en.wikipedia.org/wiki/Technological_singularity)
++[^2]: I have good reason to think this is not likely, because he
++[wrote another blog post](https://shumer.dev/gpt53-codex-review) in which he continued to
++[emphasize](https://shumer.dev/gpt53-codex-review#:~:text=Full%20Autonomy%20Has%20Arrived)
++the [language](https://shumer.dev/gpt53-codex-review#:~:text=But%20now%20we%20have%20hit%20the%20next%20phase%20change%2C%20and%20I%20am%20calling%20it%20now%3A%20this%20is%20full%20autonomy.)
++of [full autonomy](https://shumer.dev/gpt53-codex-review#:~:text=GPT%2D5.3%2DCodex%20is%20the%20first%20coding%20model%20I%20have%20used%20where%20full%20autonomy%20starts%20feeling%20operationally%20real.)
++[^3]: Rhetorically speaking, I don't know how [skill issues still apply](https://www.forbes.com/sites/yolarobert1/2026/01/28/can-democratizing-ai-product-skills-lead-to-more-company-wide-innovation/) in a world of autonomous AI development...
