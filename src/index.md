@@ -29,7 +29,7 @@ I also have professional experience with:
 - Docker
 - Github Actions
 
-My current favorite agentic model is **opus-4.8** (though I like **gpt-codex-5.3+** too).
+My current favorite agentic model is **opus-4.8**.
 
 ---
 
