@@ -2,7 +2,7 @@
 
 <img src="me.jpg" alt="Picture of Andrew Rowe" width="250" height="257">
 
-I am a software engineer with a decade of industry experience.
+I am a staff software engineer with a decade of industry experience.
 
 I currently work at [Workiva](https://www.workiva.com/) on our [no code workflow engine](https://support.workiva.com/hc/en-us/articles/360056193131-Get-started-with-chains).
 
@@ -29,7 +29,7 @@ I also have professional experience with:
 - Docker
 - Github Actions
 
-My current favorite agentic model is **opus-4.8**.
+The agentic model I currently use is **opus-5.5**. It has not been my favorite, or least favorite.
 
 ---
 
