@@ -29,7 +29,7 @@ I also have professional experience with:
 - Docker
 - Github Actions
 
-The agentic model I currently use is **opus-5.5**. It has not been my favorite, or least favorite.
+The agentic model I currently use is **opus-5.5**. <s>It has not been my favorite, or least favorite.</s> Turns out it's really good but the [security warnings are very annoying](./opus5_5.png).
 
 ---
 
