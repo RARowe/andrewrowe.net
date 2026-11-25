@@ -22,5 +22,6 @@ done
 # Move sources to public/ for download
 cp build.sh public/build.sh.txt
 mkdir public/chant
-cp chant/* public/chant
+mkdir public/chant/christmas
+cp -R chant/ public/
 
